@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 10% 40%, #0c5a4a 0%, #10182a 80%, #162447 100%);
+  color: #e0f2f1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background: #162447;
+  color: #7fffd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 255, 128, 0.08);
+  border-bottom: 2px solid #1abc9c;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.perfil {
+  background: #162447;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(0, 255, 128, 0.07);
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  width: 420px;
+  min-height: 140px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid #1abc9c;
+  margin-bottom: 10px;
+}
+
+.perfil:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 255, 128, 0.13);
+  border-color: #7fffd4;
+}
+
+.perfil img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 28px;
+  margin-bottom: 0;
+  border: 3px solid #1abc9c;
+  background: #10182a;
+}
+
+.perfil-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+.perfil-content h3 {
+  color: #7fffd4;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+.perfil-content p {
+  color: #e0f2f1;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+.perfil-content button {
+  background: #1abc9c;
+  color: #10182a;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 2px;
+}
+.perfil-content button:hover {
+  background: #7fffd4;
+  color: #162447;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1px;
+  margin-top: 2px;
+}
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background:#11998e;
+  transition: transform 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(26, 188, 156, 0.08);
+}
+.social-icons a:hover img {
+  transform: scale(1.13) rotate(-6deg);
+  box-shadow: 0 4px 16px #1abc9c44;
+  background: #1abc9c;
+}
+
+.projects-section {
+  width: 100%;
+  padding: 50px 0 40px 0;
+  text-align: center;
+}
+.projects-section h2 {
+  font-size: 2.2rem;
+  color: #7fffd4;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.project-card {
+  background: #162447;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 255, 128, 0.08);
+  width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #1abc9c;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03)  rotate(-2deg);
+  box-shadow: 0 12px 32px rgba(0, 255, 128, 0.15);
+  border-color: #7fffd4;
+}
+.project-image {
+  height: 140px;
+  background: linear-gradient(120deg, #0f3443 0%, #34e89e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-content {
+  padding: 22px 18px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-content h3 {
+  font-size: 1.3rem;
+  color: #7fffd4;
+  margin-bottom: 8px;
+}
+.project-content p {
+  color: #e0f2f1;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+.project-link {
+  background: #1abc9c;
+  color: #10182a;
+  padding: 8px 18px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  align-self: flex-end;
+}
+.project-link:hover {
+  background: #7fffd4;
+  color: #162447;
+}
+
+footer {
+  width: 100%;
+  background: #162447;
+  color: #7fffd4;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  font-size: 1rem;
+  margin-top: 90px;
+  letter-spacing: 0.5px;
+  border-top: 2px solid #1abc9c;
+}
